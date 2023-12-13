@@ -1,4 +1,4 @@
-/* Custom Fonts */
+/* Custom Fonts and Google Fonts Import */
 
 @font-face {
     font-family: 'Pokemon Normal';
@@ -17,10 +17,24 @@ h2,
 h3,
 h4 {
     font-family: 'Pokemon Solid', 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
-p,
-ul,
-li {
+body {
     font-family: 'Pokémon Normal', 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #c8c8c8;
+}
+
+/* Background image */
+.pokemon-background {
+    position: fixed;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/images/pokemon-city-background.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: .7;
+    z-index: -1;
 }
