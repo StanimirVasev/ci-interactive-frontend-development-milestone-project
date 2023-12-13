@@ -1,0 +1,26 @@
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'Pokemon Normal';
+    src: url('/assets/fonts/pokemon-normal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('/assets/fonts/pokemon-solid.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Pokemon Solid', 'Montserrat', sans-serif;
+}
+
+p,
+ul,
+li {
+    font-family: 'Pokémon Normal', 'Montserrat', sans-serif;
+}
