@@ -46,10 +46,10 @@ body {
 
 .start-game-area {
     background-color: black;
-    height: 530px;
+    height: 540px;
     max-width: 850px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 30px;
     border-radius: 30px;
     position: relative;
     padding: 20px;
@@ -59,11 +59,55 @@ body {
 .start-game-menu {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-.menu-icons {
-    margin-top: 0px;
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    flex-direction: column;
+}
+
+.menu-icon a {
+    text-decoration: none;
+}
+
+.pokedex {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pokedex:hover object,
+.pokedex:hover .menu-icons {
+    color: #ffad00;
+    transform: translateY(-2px);
+}
+
+.menu-icon:hover .fa-volume-up,
+.menu-icon:hover .fa-volume-mute {
+    color: #ffad00;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+#volume .fa-volume-up {
+    margin-right: 5px;
+}
+
+#volume:hover,
+#volume:hover .menu-icons {
+    color: #ffad00;
+    transform: translateY(-2px);
+    text-decoration: none;
 }
 
 .start-game-title {
@@ -109,7 +153,7 @@ body {
 
 .start-name-rule {
     position: absolute;
-    top: 345px;
+    top: 355px;
     right: 120px;
 }
 
@@ -143,11 +187,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
 .copyright {
-    margin-top: 55px;
+    margin-top: 45px;
     color: #ffffff;
     font-size: 14px;
 }
@@ -161,5 +204,4 @@ body {
 .social-icons :hover {
     color: #ffad00;
     transform: translateY(-2px);
-
 }
