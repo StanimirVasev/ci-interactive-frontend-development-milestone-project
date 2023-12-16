@@ -13,7 +13,10 @@
     <meta name="author" content="Stanimir Vasev" />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/329284e466.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/329284e466.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
@@ -29,45 +32,85 @@
     <title>PokéDuel</title>
   </head>
   <body class="pokemon-background">
-
     <!-- Start game area -->
     <section class="start-game-area" id="start-game-area">
-        <!-- Start game menu -->
-        <div class="start-game-menu">
-            <!-- Pokedex image and label -->
-            <div id="pokedex">
-            <img src="assets/images/pokedex.png" alt="Pokedex" class="pokedex">
-            <p class="icons">Pokedex</p>
-            </div>
+      <!-- Start game menu -->
+      <div class="start-game-menu">
+        <!-- Pokedex image and label -->
+        <div id="pokedex">
+          <img src="assets/images/pokedex.png" alt="Pokedex" class="pokedex" />
+          <p class="menu-icons">Pokedex</p>
         </div>
+      </div>
 
-        <!-- Game Title -->
-        <div class="start-game-title">
-            <h1>Welcome to PokéDuel!</h1>
+      <!-- Game Title -->
+      <div class="start-game-title">
+        <h1>Welcome to PokéDuel!</h1>
+      </div>
+
+      <!-- Game Introduction Text -->
+      <div class="start-game-text">
+        <p>Adventure awaits!</p>
+        <p>Enter your name to embark on your journey as a Pokémon trainer.</p>
+      </div>
+
+      <!-- User Name Input and Button -->
+      <div class="start-game-name">
+        <form action="#" onsubmit="#">
+          <!-- Don't forget to add values here!!!-->
+          <label for="player-name"></label>
+          <input
+            type="text"
+            placeholder="Enter your name here..."
+            maxlength="12"
+            required=""
+          />
+          <div class="start-game-button">
+            <button aria-label="start-game-button" id="start-btn" class="hover">
+              Start a duel
+            </button>
+          </div>
+
+          <!-- Instruction for user input -->
+          <div class="start-name-rule">
+            <i class="fas fa-question-circle" aria-hidden="true"></i>
+            <p>
+              Your name can only include 12 letters and spaces. Please do not
+              enter any numbers.
+            </p>
+          </div>
+        </form>
+      </div>
+      <!-- Footer section -->
+      <footer>
+        <div class="copyright">
+          <p>© Created by Stanimir Vasev</p>
         </div>
-
-        <!-- Game Introduction Text -->
-        <div class="start-game-text">
-            <p>Adventure awaits!</p>
-            <p>Enter your name to embark on your journey as a Pokémon trainer.</p>
+        <div class="social-icons">
+          <a
+            href="https://github.com/StanimirVasev/ci-interactive-frontend-development-milestone-project"
+            target="_blank"
+            rel="noopener"
+            aria-label="Check the website's GitHub page"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/stanimir-vasev-acim-miod-50a7b2181/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Follow me on LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/stanimir.vasev"
+            target="_blank"
+            rel="noopener"
+            aria-label="Follow me on Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
-
-        <!-- User Name Input and Button -->
-        <div class="start-game-name">
-            <form action="#" onsubmit="#"> <!-- Don't forget to add values here!!!-->
-                <label for="player-name"></label>
-                 <input type="text" placeholder="Enter your name here..." maxlength="12" required="">
-                 <div class="start-game-button">
-                    <button aria-label="start-game-button" id="start-btn" class="hover">Start a duel</button>
-                 </div>
-
-                <!-- Instruction for user input -->
-                 <div class="start-name-rule">
-                    <i class="fas fa-question-circle" aria-hidden="true"></i>
-                    <p>Your name can only include 12 letters and spaces. Please do not enter any numbers.</p>
-                 </div>
-            </form>
-        </div>
+      </footer>
+    </section>
 
     <!-- JavaScript -->
     <script src="script.js"></script>

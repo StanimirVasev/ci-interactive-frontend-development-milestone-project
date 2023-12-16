@@ -46,10 +46,10 @@ body {
 
 .start-game-area {
     background-color: black;
-    height: 500px;
+    height: 530px;
     max-width: 850px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 40px;
     border-radius: 30px;
     position: relative;
     padding: 20px;
@@ -62,7 +62,7 @@ body {
     justify-content: flex-end;
 }
 
-.icons {
+.menu-icons {
     margin-top: 0px;
 }
 
@@ -71,7 +71,6 @@ body {
 }
 
 .start-game-text {
-    margin-top: 25px;
     font-size: 20px;
 }
 
@@ -136,4 +135,25 @@ body {
 .start-name-rule:hover p {
     display: block;
     z-index: 50;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.copyright {
+    margin-top: 55px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 28px;
+    margin-left: 5px;
 }
