@@ -59,8 +59,13 @@ body {
 .start-game-menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+#home {
+    margin-right: 15px;
 }
 
 .menu-icon {
@@ -79,21 +84,28 @@ body {
 }
 
 .pokedex {
-    color: #ffffff;
-    text-decoration: none;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    margin-left: auto;
     flex-direction: column;
+
 }
 
-.pokedex:hover object,
-.pokedex:hover .menu-icons {
-    color: #ffad00;
-    transform: translateY(-2px);
+#home i,
+#volume i,
+.pokedex i {
+    font-size: 24px;
 }
 
 .menu-icon:hover .fa-volume-up,
-.menu-icon:hover .fa-volume-mute {
+.menu-icon:hover .fa-volume-mute,
+#home:hover i,
+.pokedex i:hover,
+.pokedex:hover .menu-icons {
     color: #ffad00;
     transform: translateY(-2px);
     text-decoration: none;
@@ -101,13 +113,6 @@ body {
 
 #volume .fa-volume-up {
     margin-right: 5px;
-}
-
-#volume:hover,
-#volume:hover .menu-icons {
-    color: #ffad00;
-    transform: translateY(-2px);
-    text-decoration: none;
 }
 
 .start-game-title {

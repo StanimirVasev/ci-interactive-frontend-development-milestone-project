@@ -13,7 +13,10 @@
     <meta name="author" content="Stanimir Vasev" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
     <!-- Stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
@@ -31,31 +34,32 @@
   <body class="pokemon-background">
     <!-- Start game area -->
     <section class="start-game-area" id="start-game-area">
-        <audio id="backgroundMusic" loop>
-            <source src="assets/audio/pokemon-theme-song.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+      <!-- Background music -->
+      <audio id="backgroundMusic" loop>
+        <source src="assets/audio/pokemon-theme-song.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
       <!-- Start game menu -->
       <div class="start-game-menu">
-        <!-- Pokedex image and label -->
-        <a href="#" id="pokedex" class="pokedex">
-          <!-- Don't forget to add link to another page -->
-          <object
-            type="image/svg+xml"
-            data="assets/images/pokedex.svg"
-            width="42"
-            height="42"
-          >
-            Your browser does not support SVG.
-          </object>
-          <p class="menu-icons">Pokedex</p>
+        <!-- Home icon -->
+        <a href="index.html" class="menu-icon" id="home">
+            <i class="fas fa-home"></i>
+            <p class="menu-text">Home</p>
         </a>
 
         <!-- Volume icons -->
         <a href="#" class="menu-icon" id="volume">
             <i class="fas fa-volume-up"></i>
-            <i class="fas fa-volume-mute" style="display: none;"></i>
+            <i class="fas fa-volume-mute" style="display: none"></i>
             <p class="menu-text">Volume</p>
+        </a>
+
+        <!-- Pokedex image and label -->
+        <a href="#" id="menu-icon" class="pokedex">
+          <!-- Don't forget to add link to another page -->
+            <i class="fas fa-gamepad"></i>
+          <p class="menu-text">Pokedex</p>
         </a>
       </div>
 
