@@ -157,3 +157,9 @@ body {
     font-size: 28px;
     margin-left: 5px;
 }
+
+.social-icons :hover {
+    color: #ffad00;
+    transform: translateY(-2px);
+
+}
