@@ -12,18 +12,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
 
+/* Headings Styles */
 h1,
 h2,
 h3,
 h4 {
     font-family: 'Pokemon Solid', 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 400;
+    color: #ffc700;
 }
 
+/* Body Text */
 body {
     font-family: 'Pokémon Normal', 'Montserrat', sans-serif;
     font-weight: 400;
-    background-color: #c8c8c8;
+    color: #ffffff;
 }
 
 /* Background image */
@@ -35,6 +38,102 @@ body {
     background: url("../assets/images/pokemon-city-background.jpg");
     background-repeat: repeat;
     background-size: cover;
-    opacity: .7;
+    opacity: 0.9;
     z-index: -1;
+}
+
+/* Start Game Area */
+
+.start-game-area {
+    background-color: black;
+    height: 500px;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.start-game-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icons {
+    margin-top: 0px;
+}
+
+.start-game-title {
+    font-size: 24px;
+}
+
+.start-game-text {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.start-game-name {
+    margin-top: 35px;
+}
+
+.start-game-name input[type="text"] {
+    width: 66%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    outline: none;
+    font-size: 18px;
+}
+
+.start-game-button button {
+    margin-top: 30px;
+    font-weight: bold;
+    background-color: #ffc700;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-game-button button:hover {
+    background-color: #ffad00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.start-name-rule {
+    position: absolute;
+    top: 345px;
+    right: 120px;
+}
+
+.start-name-rule p {
+    display: none;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 315px;
+    position: absolute;
+    border-radius: 3px;
+    color: black;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.start-name-rule i {
+    cursor: pointer;
+    font-size: 24px;
+    position: relative;
+}
+
+.start-name-rule:hover p {
+    display: block;
+    z-index: 50;
 }
