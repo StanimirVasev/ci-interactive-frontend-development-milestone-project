@@ -41,120 +41,131 @@
       </audio>
 
       <!-- Game menu -->
-      <div class="start-game-menu">
+      <div class="game-menu">
         <!-- Home icon -->
         <a href="index.html" class="menu-icon" id="home">
-            <i class="fas fa-home"></i>
-            <p class="menu-text">Home</p>
+          <i class="fas fa-home"></i>
+          <p class="menu-text">Home</p>
         </a>
 
         <!-- Volume icons -->
         <a href="#" class="menu-icon" id="volume">
-            <i class="fas fa-volume-up"></i>
-            <i class="fas fa-volume-mute"></i>
-            <p class="menu-text">Volume</p>
+          <i class="fas fa-volume-up"></i>
+          <i class="fas fa-volume-mute"></i>
+          <p class="menu-text">Volume</p>
         </a>
 
         <!-- Pokedex image and label -->
         <div id="pokedex" class="pokedex">
-            <!-- Don't forget to add link to another page -->
-            <i class="fas fa-gamepad"></i>
-            <p class="menu-text">Pokedex</p>
+          <!-- Don't forget to add link to another page -->
+          <i class="fas fa-gamepad"></i>
+          <p class="menu-text">Pokedex</p>
         </div>
       </div>
-    
+
       <!-- Home screen -->
       <div id="home-screen">
-      <!-- Home Screen Title -->
-        <div class="start-game-title">
-        <h1>Welcome to PokéDuel!</h1>
+        <!-- Home Screen Title -->
+        <div class="home-screen-title">
+          <h1>Welcome to PokéDuel!</h1>
         </div>
 
         <!-- Home Screen Introduction Text -->
-        <div class="start-game-text">
-        <p>Adventure awaits!</p>
-        <p>Enter your name to embark on your journey as a Pokémon trainer.</p>
+        <div class="home-screen-text">
+          <p>Adventure awaits!</p>
+          <p>Enter your name to embark on your journey as a Pokémon trainer.</p>
         </div>
 
         <!-- Home Screen User Name Input and Button -->
-        <div class="start-game-name">
-        <form action="#" onsubmit="#">
-          <!-- Don't forget to add values here!!!-->
-          <label for="player-name"></label>
-          <input
-            type="text"
-            id="player-name"
-            placeholder="Enter your name here..."
-            maxlength="12"
-            required=""
-          />
-          <div class="start-game-button">
-            <button aria-label="start-game-button" id="start-btn" class="hover">
-              Start a duel
-            </button>
-          </div>
+        <div class="home-screen-name">
+          <form action="#" onsubmit="#">
+            <!-- Don't forget to add values here!!!-->
+            <label for="player-name"></label>
+            <input
+              type="text"
+              id="player-name"
+              placeholder="Enter your name here..."
+              maxlength="12"
+              required=""
+            />
+            <div class="home-screen-button">
+              <button
+                aria-label="home-screen-button"
+                id="start-btn"
+                class="hover"
+              >
+                Start a duel
+              </button>
+            </div>
 
-          <!-- Home Screen Instruction for user input -->
-          <div class="start-name-rule">
-            <i class="fas fa-question-circle" aria-hidden="true"></i>
-            <p>
-              Your name can only include 12 letters and spaces. Please do not
-              enter any numbers.
-            </p>
-          </div>
-        </form>
-      </div>
+            <!-- Home Screen Instruction for user input -->
+            <div class="home-screen-rule">
+              <i class="fas fa-question-circle" aria-hidden="true"></i>
+              <p>
+                Your name can only include 12 letters and spaces. Please do not
+                enter any numbers.
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
 
-    <!-- Pokedex Modal -->
+      <!-- Pokedex Modal -->
       <div id="pokedexModal" class="modal">
         <div id="modal-content">
-            <h2>How to play</h2>
-<p>PokéDuel offers a Pokémon-themed twist on rock-paper-scissors.</p>
-<p>Pick from Water, Fire, or Grass Pokémon types.</p>
-<p>Defeat the computer by selecting a type that beats its choice. For example:</p>
-<ul class="no-bullets">
-    <li>Water beats Fire</li>
-    <li>Fire beats Grass</li>
-    <li>Grass beats Water</li>
-</ul>
-<p>Win by having the stronger Pokémon type; lose if weaker or tie if the types match. </p>
-<p>The first to win 10 rounds emerges
-    victorious!</p>
-
+          <h2>How to play</h2>
+          <p>PokéDuel offers a Pokémon-themed twist on rock-paper-scissors.</p>
+          <p>Pick from Water, Fire, or Grass Pokémon types.</p>
+          <p>
+            Defeat the computer by selecting a type that beats its choice. For
+            example:
+          </p>
+          <ul class="no-bullets">
+            <li>Water beats Fire</li>
+            <li>Fire beats Grass</li>
+            <li>Grass beats Water</li>
+          </ul>
+          <p>
+            Win by having the stronger Pokémon type; lose if weaker or tie if
+            the types match.
+          </p>
+          <p>The first to win 10 rounds emerges victorious!</p>
         </div>
       </div>
     </div>
+
+    <div class="play-area" id="play-area">
+      <div></div>
     </div>
-      <!-- Footer section -->
-      <footer class="footer-container">
-        <div class="copyright">
-          <p>© Created by Stanimir Vasev</p>
-        </div>
-        <div class="social-icons">
-          <a
-            href="https://github.com/StanimirVasev/ci-interactive-frontend-development-milestone-project"
-            target="_blank"
-            rel="noopener"
-            aria-label="Check the website's GitHub page"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/stanimir-vasev-acim-miod-50a7b2181/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Follow me on LinkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/stanimir.vasev"
-            target="_blank"
-            rel="noopener"
-            aria-label="Follow me on Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-      </footer>
+    <!-- Footer section -->
+    <footer class="footer-container">
+      <div class="copyright">
+        <p>© Created by Stanimir Vasev</p>
+      </div>
+      <div class="social-icons">
+        <a
+          href="https://github.com/StanimirVasev/ci-interactive-frontend-development-milestone-project"
+          target="_blank"
+          rel="noopener"
+          aria-label="Check the website's GitHub page"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/stanimir-vasev-acim-miod-50a7b2181/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Follow me on LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/stanimir.vasev"
+          target="_blank"
+          rel="noopener"
+          aria-label="Follow me on Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
