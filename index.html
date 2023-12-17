@@ -32,15 +32,15 @@
     <title>PokéDuel</title>
   </head>
   <body class="pokemon-background">
-    <!-- Start game area -->
-    <section class="start-game-area" id="start-game-area">
+    <!-- Game box -->
+    <div class="game-box" id="game-box">
       <!-- Background music -->
       <audio id="backgroundMusic" loop>
         <source src="assets/audio/pokemon-theme-song.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 
-      <!-- Start game menu -->
+      <!-- Game menu -->
       <div class="start-game-menu">
         <!-- Home icon -->
         <a href="index.html" class="menu-icon" id="home">
@@ -51,31 +51,33 @@
         <!-- Volume icons -->
         <a href="#" class="menu-icon" id="volume">
             <i class="fas fa-volume-up"></i>
-            <i class="fas fa-volume-mute" style="display: none"></i>
+            <i class="fas fa-volume-mute"></i>
             <p class="menu-text">Volume</p>
         </a>
 
         <!-- Pokedex image and label -->
-        <a href="#" id="menu-icon" class="pokedex">
-          <!-- Don't forget to add link to another page -->
+        <div id="pokedex" class="pokedex">
+            <!-- Don't forget to add link to another page -->
             <i class="fas fa-gamepad"></i>
-          <p class="menu-text">Pokedex</p>
-        </a>
+            <p class="menu-text">Pokedex</p>
+        </div>
       </div>
-
-      <!-- Game Title -->
-      <div class="start-game-title">
+    
+      <!-- Home screen -->
+      <div id="home-screen">
+      <!-- Home Screen Title -->
+        <div class="start-game-title">
         <h1>Welcome to PokéDuel!</h1>
-      </div>
+        </div>
 
-      <!-- Game Introduction Text -->
-      <div class="start-game-text">
+        <!-- Home Screen Introduction Text -->
+        <div class="start-game-text">
         <p>Adventure awaits!</p>
         <p>Enter your name to embark on your journey as a Pokémon trainer.</p>
-      </div>
+        </div>
 
-      <!-- User Name Input and Button -->
-      <div class="start-game-name">
+        <!-- Home Screen User Name Input and Button -->
+        <div class="start-game-name">
         <form action="#" onsubmit="#">
           <!-- Don't forget to add values here!!!-->
           <label for="player-name"></label>
@@ -92,7 +94,7 @@
             </button>
           </div>
 
-          <!-- Instruction for user input -->
+          <!-- Home Screen Instruction for user input -->
           <div class="start-name-rule">
             <i class="fas fa-question-circle" aria-hidden="true"></i>
             <p>
@@ -102,8 +104,30 @@
           </div>
         </form>
       </div>
+      </div>
+
+    <!-- Pokedex Modal -->
+      <div id="pokedexModal" class="modal">
+        <div id="modal-content">
+            <h2>How to play</h2>
+<p>PokéDuel offers a Pokémon-themed twist on rock-paper-scissors.</p>
+<p>Pick from Water, Fire, or Grass Pokémon types.</p>
+<p>Defeat the computer by selecting a type that beats its choice. For example:</p>
+<ul class="no-bullets">
+    <li>Water beats Fire</li>
+    <li>Fire beats Grass</li>
+    <li>Grass beats Water</li>
+</ul>
+<p>Win by having the stronger Pokémon type; lose if weaker or tie if the types match. </p>
+<p>The first to win 10 rounds emerges
+    victorious!</p>
+
+        </div>
+      </div>
+    </div>
+    </div>
       <!-- Footer section -->
-      <footer>
+      <footer class="footer-container">
         <div class="copyright">
           <p>© Created by Stanimir Vasev</p>
         </div>
@@ -131,7 +155,6 @@
           ></a>
         </div>
       </footer>
-    </section>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
