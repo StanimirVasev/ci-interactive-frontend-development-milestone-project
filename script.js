@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         updateScore();
         checkWinner();
+        selectRandomPokemon();
     }
 
     // Function to display outcomes

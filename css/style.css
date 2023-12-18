@@ -215,7 +215,25 @@ li {
 .pokemons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+}
+
+.pokemon {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid #E83030;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.pokemon:hover {
+    background-color: #ffffff;
 }
 
 /* Footer */
