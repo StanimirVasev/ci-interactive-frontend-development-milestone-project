@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const duelArea = document.getElementById('duel-area');
     let currentScreen = 'home';
     let previousScreen = 'home';
+    let playerScore = 0;
+    let computerScore = 0;
 
     duelArea.style.display = 'none';
     pokedexModal.style.display = 'none';
@@ -104,9 +106,14 @@ document.addEventListener('DOMContentLoaded', function () {
             (playerPokemon === 'grass' && computerPokemon === 'water')
         ) {
             displayOutcome('You win!', playerPokemon, computerPokemon);
+            playerScore++;
         } else {
             displayOutcome('You lost...', playerPokemon, computerPokemon);
+            computerScore++;
         }
+
+        updateScore();
+        checkWinner();
     }
 
     // Function to display outcomes
@@ -126,6 +133,24 @@ document.addEventListener('DOMContentLoaded', function () {
         outcomeParagraph.classList.add(outcome === 'You win!' ? 'win' : outcome === 'You lost...' ? 'loss' : 'tie');
 
         outcomeContainer.appendChild(outcomeParagraph);
+    }
+
+    // Function to update scores
+    function updateScore() {
+        const playerScoreElement = document.getElementById('player-score');
+        const computerScoreElement = document.getElementById('computer-score');
+
+        playerScoreElement.innerText = playerScore;
+        computerScoreElement.innerText = computerScore;
+    }
+
+    // Function to check for the winner
+    function checkWinner() {
+        if (playerScore === 10) {
+            alert('Congratulations! You are the winner!');
+        } else if (computerScore === 10) {
+            alert('Game over! The computer is the winner. Better luck next time!');
+        }
     }
 
     // Event listeners for player choices
