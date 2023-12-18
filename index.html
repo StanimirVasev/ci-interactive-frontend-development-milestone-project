@@ -101,9 +101,7 @@
             <!-- Home Screen Instruction for user input -->
             <div class="home-screen-rule">
               <i class="fas fa-question-circle" aria-hidden="true"></i>
-              <p>
-                Your name can only include 12 characters.
-              </p>
+              <p>Your name can only include 12 characters.</p>
             </div>
           </form>
         </div>
@@ -132,23 +130,26 @@
         </div>
       </div>
 
-    <!-- Rock, paper, scissors game area -->
-    <div class="duel-area" id="duel-area">
+      <!-- Rock, paper, scissors game area -->
+      <div class="duel-area" id="duel-area">
         <div class="duel-content">
-        <h2>Make your choice</h2>
-      <div class="pokemons">
-        <div class="pokemon" id="water"></div>
-        <div class="pokemon" id="fire"></div>
-        <div class="pokemon" id="grass"></div>
-        </div>
+          <h2>Make your choice</h2>
+            <div class="type-images">
+                        <img src="assets/images/water-type.png" alt="Water Type" class="type-image" />
+                        <img src="assets/images/fire-type.png" alt="Fire Type" class="type-image" />
+                        <img src="assets/images/grass-type.png" alt="Grass Type" class="type-image" />
+            </div>
+          <div class="pokemons">
+            <div class="pokemon" id="water"></div>
+            <div class="pokemon" id="fire"></div>
+            <div class="pokemon" id="grass"></div>
+          </div>
+          <div class="outcomes" id="outcomes-container"></div>
 
-        <div class="outcomes" id="outcomes-container">
-        </div>
-
-        <div class="score-container">
+          <div class="score-container">
             <p>Your score: <span id="player-score">0</span></p>
             <p>Computer score: <span id="computer-score">0</span></p>
-        </div>
+          </div>
         </div>
       </div>
     </div>
