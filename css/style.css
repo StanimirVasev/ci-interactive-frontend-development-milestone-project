@@ -162,7 +162,8 @@ body {
 .home-screen-rule p {
     display: none;
     text-align: left;
-    background-color: #ffffff;
+    background-color: #ffc700;
+    font-weight: bold;
     padding: 10px;
     width: 315px;
     position: absolute;
@@ -194,6 +195,16 @@ body {
 #modal-content p,
 li {
     font-size: 18px;
+}
+
+/* Duel area */
+
+.duel-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 /* Footer */
