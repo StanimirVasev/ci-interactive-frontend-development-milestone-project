@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
             pokedexModal.style.display = 'block';
             homeScreen.style.display = 'none';
             duelArea.style.display = 'none';
-            currentScreen = 'pokedex'; 
+            currentScreen = 'pokedex';
         } else if (currentScreen === 'duel') {
             pokedexModal.style.display = 'block';
             homeScreen.style.display = 'none';
             duelArea.style.display = 'none';
-            currentScreen = 'pokedex'; 
+            currentScreen = 'pokedex';
         } else if (currentScreen === 'pokedex') {
             pokedexModal.style.display = 'none';
             if (previousScreen === 'home') {
@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 duelArea.style.display = 'none';
             } else if (previousScreen === 'duel') {
                 duelArea.style.display = 'block';
-                homeScreen.style.display = 'none'; 
+                homeScreen.style.display = 'none';
             }
-            currentScreen = previousScreen; 
+            currentScreen = previousScreen;
         }
     });
 
@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (playerName !== '') {
             homeScreen.style.display = 'none';
             duelArea.style.display = 'block';
-            previousScreen = 'duel'; 
-            currentScreen = 'duel'; 
+            previousScreen = 'duel';
+            currentScreen = 'duel';
         }
     });
 
@@ -148,9 +148,21 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkWinner() {
         if (playerScore === 10) {
             alert('Congratulations! You are the winner!');
+            resetGame();
         } else if (computerScore === 10) {
             alert('Game over! The computer is the winner. Better luck next time!');
+            resetGame();
         }
+    }
+
+    // Function to reset the game
+    function resetGame() {
+        playerScore = 0;
+        computerScore = 0;
+        updateScore();
+
+        const outcomeContainer = document.getElementById('outcomes-container');
+        outcomeContainer.innerHTML = '';
     }
 
     // Event listeners for player choices
