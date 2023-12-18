@@ -68,27 +68,51 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function selectRandomPokemon() {
         const waterPokemons = [
-            'water_pokemon_1.png',
-            'water_pokemon_2.png',
+            'assets/images/water_pokemon_1.png',
+            'assets/images/water_pokemon_2.png',
+            'assets/images/water_pokemon_3.png',
+            'assets/images/water_pokemon_4.png',
+            'assets/images/water_pokemon_5.png',
+            'assets/images/water_pokemon_6.png',
+            'assets/images/water_pokemon_7.png',
+            'assets/images/water_pokemon_8.png',
+            'assets/images/water_pokemon_9.png',
+            'assets/images/water_pokemon_10.png',
         ];
 
         const firePokemons = [
-            'fire_pokemon_1.png',
-            'fire_pokemon_2.png',
+            'assets/images/fire_pokemon_1.png',
+            'assets/images/fire_pokemon_2.png',
+            'assets/images/fire_pokemon_3.png',
+            'assets/images/fire_pokemon_4.png',
+            'assets/images/fire_pokemon_5.png',
+            'assets/images/fire_pokemon_6.png',
+            'assets/images/fire_pokemon_7.png',
+            'assets/images/fire_pokemon_8.png',
+            'assets/images/fire_pokemon_9.png',
+            'assets/images/fire_pokemon_10.png',
         ];
 
         const grassPokemons = [
-            'grass_pokemon_1.png',
-            'grass_pokemon_2.png',
+            'assets/images/grass_pokemon_1.png',
+            'assets/images/grass_pokemon_2.png',
+            'assets/images/grass_pokemon_3.png',
+            'assets/images/grass_pokemon_4.png',
+            'assets/images/grass_pokemon_5.png',
+            'assets/images/grass_pokemon_6.png',
+            'assets/images/grass_pokemon_7.png',
+            'assets/images/grass_pokemon_8.png',
+            'assets/images/grass_pokemon_9.png',
+            'assets/images/grass_pokemon_10.png',
         ];
 
         const waterPokemon = waterPokemons[Math.floor(Math.random() * waterPokemons.length)];
         const firePokemon = firePokemons[Math.floor(Math.random() * firePokemons.length)];
         const grassPokemon = grassPokemons[Math.floor(Math.random() * grassPokemons.length)];
 
-        document.getElementById('water').innerHTML = `<img src="${waterPokemon}" alt="Water Pokemon" />`;
-        document.getElementById('fire').innerHTML = `<img src="${firePokemon}" alt="Fire Pokemon" />`;
-        document.getElementById('grass').innerHTML = `<img src="${grassPokemon}" alt="Grass Pokemon" />`;
+        document.getElementById('water').innerHTML = `<img src="${waterPokemon}" alt="Water Pokemon" class="pokemon-image" />`;
+        document.getElementById('fire').innerHTML = `<img src="${firePokemon}" alt="Fire Pokemon" class="pokemon-image" />`;
+        document.getElementById('grass').innerHTML = `<img src="${grassPokemon}" alt="Grass Pokemon" class="pokemon-image" />`;
     }
 
     selectRandomPokemon();
