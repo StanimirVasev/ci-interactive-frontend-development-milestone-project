@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let previousScreen = 'home';
     let playerScore = 0;
     let computerScore = 0;
+    let playerName = '';
 
     duelArea.style.display = 'none';
     pokedexModal.style.display = 'none';
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     startButton.addEventListener('click', function (event) {
         event.preventDefault();
-        const playerName = document.getElementById('player-name').value.trim();
+        playerName = document.getElementById('player-name').value.trim();
         if (playerName !== '') {
             homeScreen.style.display = 'none';
             duelArea.style.display = 'block';
@@ -172,10 +173,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to check for the winner
     function checkWinner() {
         if (playerScore === 10) {
-            alert('Congratulations! You are the winner!');
+            alert(`Congratulations, ${playerName}! You are the new Pokémon Master!`);
             resetGame();
         } else if (computerScore === 10) {
-            alert('Game over! The computer is the winner. Better luck next time!');
+            alert(`Oh, sorry, ${playerName}, you lost this time, but please try again! I believe you can win next time!`);
             resetGame();
         }
     }
