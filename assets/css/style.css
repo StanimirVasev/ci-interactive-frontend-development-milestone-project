@@ -183,7 +183,7 @@ body {
     z-index: 50;
 }
 
-/* Modal content */
+/* Pokedex Modal content */
 
 .no-bullets {
     list-style-type: none;
@@ -194,6 +194,35 @@ body {
 #modal-content p,
 li {
     font-size: 18px;
+}
+
+/* End Game Modal content */
+
+#endGameModal {
+    display: none;
+}
+
+#endGameImage {
+    width: 600px;
+    height: 303.75px;
+}
+
+.play-again-btn {
+    font-weight: bold;
+    background-color: #ffc700;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-again-btn:hover {
+    background-color: #ffad00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Duel area */
@@ -282,7 +311,7 @@ li {
     margin-left: 5px;
 }
 
-.social-icons :hover {
+.social-icons a:hover {
     color: #ffad00;
     transform: translateY(-2px);
 }

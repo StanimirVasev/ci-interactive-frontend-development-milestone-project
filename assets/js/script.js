@@ -124,16 +124,16 @@ document.addEventListener('DOMContentLoaded', function () {
         const computerPokemon = pokemons[Math.floor(Math.random() * pokemons.length)];
 
         if (playerPokemon === computerPokemon) {
-            displayOutcome('It\'s a tie!', playerPokemon, computerPokemon);
+            displayTurnOutcome('It\'s a tie!', playerPokemon, computerPokemon);
         } else if (
             (playerPokemon === 'water' && computerPokemon === 'fire') ||
             (playerPokemon === 'fire' && computerPokemon === 'grass') ||
             (playerPokemon === 'grass' && computerPokemon === 'water')
         ) {
-            displayOutcome('You win!', playerPokemon, computerPokemon);
+            displayTurnOutcome('You win!', playerPokemon, computerPokemon);
             playerScore++;
         } else {
-            displayOutcome('You lost...', playerPokemon, computerPokemon);
+            displayTurnOutcome('You lost...', playerPokemon, computerPokemon);
             computerScore++;
         }
 
@@ -142,12 +142,12 @@ document.addEventListener('DOMContentLoaded', function () {
         selectRandomPokemon();
     }
 
-    // Function to display outcomes
-    function displayOutcome(outcome, playerPokemon, computerPokemon) {
-        const outcomeContainer = document.getElementById('outcomes-container');
+    // Function to display outcomes for each turn
+    function displayTurnOutcome(outcome, playerPokemon, computerPokemon) {
+        const turnOutcomeContainer = document.getElementById('turn-outcomes-container');
 
         // Clear previous outcomes
-        outcomeContainer.innerHTML = '';
+        turnOutcomeContainer.innerHTML = '';
 
         const outcomeParagraph = document.createElement('p');
         outcomeParagraph.classList.add('outcome');
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
         outcomeParagraph.innerText = `${outcomeText} ${computerPokemonText}`;
         outcomeParagraph.classList.add(outcome === 'You win!' ? 'win' : outcome === 'You lost...' ? 'loss' : 'tie');
 
-        outcomeContainer.appendChild(outcomeParagraph);
+        turnOutcomeContainer.appendChild(outcomeParagraph);
     }
 
     // Function to update scores
@@ -170,16 +170,49 @@ document.addEventListener('DOMContentLoaded', function () {
         computerScoreElement.innerText = computerScore;
     }
 
+    function showEndGameModal(message, imageSrc) {
+        const endGameModal = document.getElementById('endGameModal');
+        const endGameImage = document.getElementById('endGameImage');
+        const endGameMessage = document.getElementById('endGameMessage');
+
+        // Set the message and image source
+        endGameMessage.innerText = message;
+        endGameImage.src = imageSrc;
+
+        // Display the modal
+        endGameModal.style.display = 'block';
+        duelArea.style.display = 'none';
+
+
+        // Hide the Pokédex icon
+        pokedexIcon.style.display = 'none';
+    }
+
     // Function to check for the winner
     function checkWinner() {
         if (playerScore === 10) {
-            alert(`Congratulations, ${playerName}! You are the new Pokémon Master!`);
-            resetGame();
+            showEndGameModal(`Congratulations, ${playerName}! You are the new Pokémon Master!`, 'assets/images/you-won.gif');
         } else if (computerScore === 10) {
-            alert(`Oh, sorry, ${playerName}, you lost this time, but please try again! I believe you can win next time!`);
-            resetGame();
+            showEndGameModal(`Oh, sorry, ${playerName}, you lost this time, but please try again! I believe you can win next time!`, 'assets/images/you-lost.gif');
         }
     }
+
+    // Event listener for the Play Again button
+    const playAgainButton = document.getElementById('play-again-btn');
+    playAgainButton.addEventListener('click', function () {
+        // Call the resetGame function here to reset the game
+        resetGame();
+
+        // Show the Pokédex icon again
+        const pokedexIcon = document.querySelector('.pokedex');
+        pokedexIcon.style.display = 'block';
+
+        // Hide the modal and display the duel area after resetting
+        const endGameModal = document.getElementById('endGameModal');
+        const duelArea = document.getElementById('duel-area');
+        endGameModal.style.display = 'none';
+        duelArea.style.display = 'block';
+    });
 
     // Function to reset the game
     function resetGame() {
@@ -187,8 +220,8 @@ document.addEventListener('DOMContentLoaded', function () {
         computerScore = 0;
         updateScore();
 
-        const outcomeContainer = document.getElementById('outcomes-container');
-        outcomeContainer.innerHTML = '';
+        const turnOutcomeContainer = document.getElementById('turn-outcomes-container');
+        turnOutcomeContainer.innerHTML = '';
     }
 
     // Event listeners for player choices
