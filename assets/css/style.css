@@ -37,7 +37,7 @@ body {
     content: "";
     width: 100vw;
     height: 100vh;
-    background: url("../assets/images/pokemon-city-background.jpg");
+    background: url("../images/pokemon-city-background.jpg");
     background-repeat: repeat;
     background-size: cover;
     opacity: 0.9;
@@ -93,7 +93,6 @@ body {
     transition: color 0.3s ease;
     margin-left: auto;
     flex-direction: column;
-
 }
 
 #home i,
