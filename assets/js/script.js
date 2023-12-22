@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Function to display outcomes for each turn
-    function displayTurnOutcome(outcome, playerPokemon, computerPokemon) {
+    function displayTurnOutcome(outcome, computerPokemon) {
         const turnOutcomeContainer = document.getElementById('turn-outcomes-container');
 
         // Clear previous outcomes
