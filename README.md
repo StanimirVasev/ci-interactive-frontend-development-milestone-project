@@ -175,13 +175,13 @@ The game consist of the following screens:
 </details>
 <details><summary>Mobile wireframe</summary>
 <summary>Home page view</summary>
-<img src="assets/images/wireframe-phone-start.png">
+<img src="assets/images/wireframe-phone-start.jpg">
 <summary>Pokedex view</summary>
-<img src="assets/images/wireframe-phone-pokedex.png">
+<img src="assets/images/wireframe-phone-pokedex.jpg">
 <summary>Duel area view</summary>
-<img src="assets/images/wireframe-phone-duelarea.png">
+<img src="assets/images/wireframe-phone-duelarea.jpg">
 <summary>End Game view</summary>
-<img src="assets/images/wireframe-phone-endgame.png">
+<img src="assets/images/wireframe-phone-endgame.jpg">
 </details>
 
 ## Technologies Used
