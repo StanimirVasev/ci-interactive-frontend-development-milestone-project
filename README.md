@@ -87,7 +87,7 @@ The color scheme maintained simplicity and consistency throughout the screens, d
 - Classic black and white colours were utilised for text elements and background contrasts as black (#000000) and white (#ffffff) play pivotal roles in ensuring readability and visual balance across screens.
 
 The pallet used was created on [Coolors.co](https://coolors.co/ffc700-ffad00-ee1515-ffffff-0366d6)
-<img src=".../assets/images/Colour palette.png">
+<img src="assets/images/Colour palette.png">
 
 This palette aims to evoke nostalgia while ensuring a cohesive visual experience across the screens.
 
@@ -130,7 +130,7 @@ The game consist of the following screens:
 
 ### Frameworks, Libraries & Tools
 
-- Font Awesome was used to access the volume up and volume mute icons.
+- Font Awesome was used to access the hone, pokedex, volume up and volume mute icons.
 - Google Fonts was used to access Montserrat and sans-serif fonts.
 - GitHub was used to streamline version control.
 
@@ -182,9 +182,9 @@ The game consist of the following screens:
 
 ### W3C validator testing
 
-- [HTML validator](https://validator.w3.org/): ![HTML validator results](.../assets/images/html-validator.png)
-- [CSS validator](https://jigsaw.w3.org/css-validator/): ![CSS validator results](.../assets/images/css-validator.png)
-- [JavaScript validator](https://jshint.com/): ![JavaScript validator results](.../assets/images/js-validator.png)
+- [HTML validator](https://validator.w3.org/): ![HTML validator results](assets/images/html-validator.png)
+- [CSS validator](https://jigsaw.w3.org/css-validator/): ![CSS validator results](assets/images/css-validator.png)
+- [JavaScript validator](https://jshint.com/): ![JavaScript validator results](assets/images/js-validator.png)
 
 ## Testing
 
@@ -192,44 +192,44 @@ The game consist of the following screens:
 
 <details><summary>Desktop view</summary>
 <summary>Home page view</summary>
-<img src=".../assets/images/test-desktop-homepage.png">
+<img src="assets/images/test-desktop-homepage.png">
 <summary>Pokedex view</summary>
-<img src=".../assets/images/test-desktop-pokedex.png">
+<img src="assets/images/test-desktop-pokedex.png">
 <summary>Duel area view</summary>
-<img src=".../assets/images/test-desktop-duelarea.png">
+<img src="assets/images/test-desktop-duelarea.png">
 <summary>End Game view</summary>
-<img src=".../assets/images/test-desktop-endgame.png">
+<img src="assets/images/test-desktop-endgame.png">
 </details>
 <details><summary>Tablet view</summary>
 <summary>Home page view</summary>
-<img src=".../assets/images/test-tablet-homepage.png">
+<img src="assets/images/test-tablet-homepage.png">
 <summary>Pokedex view</summary>
-<img src=".../assets/images/test-tablet-pokedex.png">
+<img src="assets/images/test-tablet-pokedex.png">
 <summary>Duel area view</summary>
-<img src=".../assets/images/test-tablet-duelarea.png">
+<img src="assets/images/test-tablet-duelarea.png">
 <summary>End Game view</summary>
-<img src=".../assets/images/test-tablet-endgame.png">
+<img src="assets/images/test-tablet-endgame.png">
 </details>
 <details><summary>Mobile view</summary>
 <summary>Galaxy Fold view</summary>
 <summary>Home page view</summary>
-<img src=".../assets/images/test-galaxy-fold-homepage.png">
+<img src="assets/images/test-galaxy-fold-homepage.png">
 <summary>Pokedex view</summary>
-<img src=".../assets/images/test-galaxy-fold-pokedex.png">
+<img src="assets/images/test-galaxy-fold-pokedex.png">
 <summary>Duel area view</summary>
-<img src=".../assets/images/test-galaxy-fold-duelarea.png">
+<img src="assets/images/test-galaxy-fold-duelarea.png">
 <summary>End Game view</summary>
-<img src=".../assets/images/test-galaxy-fold-endgame.png">
+<img src="assets/images/test-galaxy-fold-endgame.png">
 
 <summary>iPhone 12 Pro view</summary>
 <summary>Home page view</summary>
-<img src=".../assets/images/test-iphone12pro-homepage.png">
+<img src="assets/images/test-iphone12pro-homepage.png">
 <summary>Pokedex view</summary>
-<img src=".../assets/images/test-iphone12pro-pokedex.png">
+<img src="assets/images/test-iphone12pro-pokedex.png">
 <summary>Duel area view</summary>
-<img src=".../assets/images/test-iphone12pro-duelarea.png">
+<img src="assets/images/test-iphone12pro-duelarea.png">
 <summary>End Game view</summary>
-<img src=".../assets/images/test-iphone12pro-endgame.png">
+<img src="assets/images/test-iphone12pro-endgame.png">
 </details>
 
 ### Lighthouse
@@ -249,7 +249,7 @@ The game consist of the following screens:
 
 ### GitHub Pages
 
-  1. The site was deployed by using GitHub Pages. You can replicate this process by going to [Link](https://github.com/StanimirVasev/ci-interactive-frontend-development-milestone-project), click on the 'Settings' tab, then select 'Pages' on the left side.
+  1. The site was deployed by using GitHub Pages. You can replicate this process by going to [Github](https://github.com/StanimirVasev/ci-interactive-frontend-development-milestone-project), click on the 'Settings' tab, then select 'Pages' on the left side.
   2. Under 'Build and deployment' section, select 'Deploy as a branch' as the Source.
   3. Select 'main' as the branch and '/(root)' as the folder and click 'Save'.
   4. Once saved, GitHub will refresh and your website will be publishd from GitHub repository.
@@ -263,19 +263,19 @@ The game consist of the following screens:
 
 ### Images, icons, music
 
-- Icons in game menu and footer were taken from [Fontawesome](https://www.fontawesome.com/)
-- Original Pokemon theme song was taken from [Television Tunes](https://www.televisiontunes.com/Pokemon)
-- Favicon was taken from [Icons 8](https://www.icons8.com/icons/set/pokeball)
-- Background image was taken from [Pokemon](https://www.pokemon.com/uk/pokemon-virtual-backgrounds/)
-- Type images (water, fire, grass) were created by the developer using [Canva](https://www.canva.com)
-- Pokemon images were taken from [Bulbapedia](https://www.bulbapedia.bulbagarden.net/wiki/Type)
-- You won gif was taken from [Tenor](https://www.tenor.com/bg/view/pikachu-gif-21053665)
-- You lost gif was taken from [Tenor](https://www.tenor.com/bg/view/pokemon-pikachu-pok%C3%A9mon-gif-15130256888716170546 )
+- Icons in game menu and footer were taken from [Fontawesome](https://www.fontawesome.com/).
+- Original Pokemon theme song was taken from [Television Tunes](https://www.televisiontunes.com/Pokemon).
+- Favicon was taken from [Icons 8](https://www.icons8.com/icons/set/pokeball).
+- Background image was taken from [Pokemon](https://www.pokemon.com/uk/pokemon-virtual-backgrounds/).
+- Type images (water, fire, grass) were created by the developer using [Canva](https://www.canva.com).
+- Pokemon images were taken from [Bulbapedia](https://www.bulbapedia.bulbagarden.net/wiki/Type).
+- You won gif was taken from [Tenor](https://www.tenor.com/bg/view/pikachu-gif-21053665).
+- You lost gif was taken from [Tenor](https://www.tenor.com/bg/view/pokemon-pikachu-pok%C3%A9mon-gif-15130256888716170546).
 
 ### Code
 
-- Overall game design (including game box and menu design) was inspired by the Code Institute Student Project example from [Mike Ralph](https://www.miker94.github.io/CI-Project-Portfolio-2/)
-- Footer was inspired by the Code Institute Student Project example from [Aleksandra Haniok](https://www.aleksandracodes.github.io/CI_PP2_SunshineGuessing/)
+- Overall game design (including game box and menu design) was inspired by the Code Institute Student Project example from [Mike Ralph](https://www.miker94.github.io/CI-Project-Portfolio-2/).
+- Footer was inspired by the Code Institute Student Project example from [Aleksandra Haniok](https://www.aleksandracodes.github.io/CI_PP2_SunshineGuessing/).
 
 ## Acknowledgements
 
