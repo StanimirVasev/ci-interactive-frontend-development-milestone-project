@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
 
 @font-face {
-    font-family: 'Pokemon Normal';
-    src: url('.../ci-interactive-frontend-development-milestone-project/assets/fonts/pokemon-normal.ttf') format('truetype');
+    font-family: 'Pokemon Solid';
+    src: url('https://stanimirvasev.github.io/ci-interactive-frontend-development-milestone-project/assets/fonts/pokemon-solid.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Pokemon Solid';
-    src: url('.../ci-interactive-frontend-development-milestone-project/assets/fonts/pokemon-solid.ttf') format('truetype');
+    font-family: 'Pokemon Normal';
+    src: url('https://stanimirvasev.github.io/ci-interactive-frontend-development-milestone-project/assets/fonts/pokemon-normal.ttf') format('truetype');
 }
 
 /* Headings Styles */
