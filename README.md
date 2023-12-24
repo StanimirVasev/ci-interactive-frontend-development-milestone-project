@@ -175,13 +175,13 @@ The game consist of the following screens:
 </details>
 <details><summary>Mobile wireframe</summary>
 <summary>Home page view</summary>
-<img src="assets/images/wireframe-galaxy-fold-start.png">
+<img src="assets/images/wireframe-phone-start.png">
 <summary>Pokedex view</summary>
-<img src="assets/images/wireframe-galaxy-fold-pokedex.png">
+<img src="assets/images/wireframe-phone-pokedex.png">
 <summary>Duel area view</summary>
-<img src="assets/images/wireframe-galaxy-fold-duelarea.png">
+<img src="assets/images/wireframe-phone-duelarea.png">
 <summary>End Game view</summary>
-<img src="assets/images/wireframe-galaxy-fold-endgame.png">
+<img src="assets/images/wireframe-phone-endgame.png">
 </details>
 
 ## Technologies Used
