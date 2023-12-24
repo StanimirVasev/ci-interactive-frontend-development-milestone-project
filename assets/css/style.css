@@ -376,6 +376,13 @@ li {
         font-size: 11px;
     }
 
+    .home-screen-rule p {
+        width: 220px;
+        font-size: 11px;
+        margin-left: -190px;
+        margin-top: 17px;
+    }
+
     .type-images {
         display: flex;
         flex-direction: column;
@@ -403,7 +410,6 @@ li {
         gap: 1px;
         position: relative;
         z-index: 1;
-
     }
 
     .pokemon {
