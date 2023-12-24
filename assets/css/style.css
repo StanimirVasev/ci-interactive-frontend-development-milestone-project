@@ -528,12 +528,24 @@ li {
         margin-top: 5px;
     }
 
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 40px;
+    }
+
+    .home-screen-text p {
+        font-size: 16px;
+    }
+
     .home-screen-rule {
-        top: 330px;
+        top: 300px;
         right: 90px;
     }
 
     .home-screen-rule p {
+        font-size: 12px;
         margin-left: -145px;
         margin-top: 30px;
         width: 200px;
