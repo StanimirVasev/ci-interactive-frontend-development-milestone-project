@@ -154,13 +154,34 @@ The game consist of the following screens:
 ### Wireframes
 
 <details><summary>Desktop wireframe</summary>
-<img src="">
+<summary>Home page view</summary>
+<img src="assets/images/wireframe-desktop-start.png">
+<summary>Pokedex view</summary>
+<img src="assets/images/wireframe-desktop-pokedex.png">
+<summary>Duel area view</summary>
+<img src="assets/images/wireframe-desktop-duelarea.png">
+<summary>End Game view</summary>
+<img src="assets/images/wireframe-desktop-endgame.png">
 </details>
 <details><summary>Tablet wireframe</summary>
-<img src="">
+<summary>Home page view</summary>
+<img src="assets/images/wireframe-tablet-start.png">
+<summary>Pokedex view</summary>
+<img src="assets/images/wireframe-tablet-pokedex.png">
+<summary>Duel area view</summary>
+<img src="assets/images/wireframe-tablet-duelarea.png">
+<summary>End Game view</summary>
+<img src="assets/images/wireframe-tablet-endgame.png">
 </details>
 <details><summary>Mobile wireframe</summary>
-<img src="">
+<summary>Home page view</summary>
+<img src="assets/images/wireframe-galaxy-fold-start.png">
+<summary>Pokedex view</summary>
+<img src="assets/images/wireframe-galaxy-fold-pokedex.png">
+<summary>Duel area view</summary>
+<img src="assets/images/wireframe-galaxy-fold-duelarea.png">
+<summary>End Game view</summary>
+<img src="assets/images/wireframe-galaxy-fold-endgame.png">
 </details>
 
 ## Technologies Used
