@@ -315,3 +315,118 @@ li {
     color: #ffad00;
     transform: translateY(-2px);
 }
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 767px) {
+    .game-box {
+        height: 90%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #player-name::placeholder {
+        font-size: 14px;
+    }
+
+    .home-screen-rule {
+        top: 390px;
+        right: 50px
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    div {
+        margin-top: 25px;
+    }
+
+    #home,
+    #volume,
+    .pokedex {
+        margin-top: 0;
+    }
+
+    .home-screen-button button {
+        margin-top: -20px;
+    }
+
+    .menu-icon {
+        margin-left: 5px;
+    }
+
+    #modal-content p,
+    li {
+        font-size: 11px;
+    }
+
+    .copyright p {
+        font-size: 11px;
+    }
+
+    .type-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        margin-top: -120px;
+        margin-bottom: -90px;
+    }
+
+    .type-images img {
+        width: 40px;
+        height: 40px;
+        margin-left: 96px;
+        margin-top: 100px;
+        margin-bottom: -33px;
+    }
+
+    .pokemons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: -30px;
+        justify-content: center;
+        gap: 1px;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .pokemon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pokemon-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .turn-outcomes {
+        margin-top: -45px;
+    }
+
+    .score-container p {
+        margin-top: -6px;
+    }
+
+    .end-game-gif {
+        max-width: 100%;
+        height: auto;
+    }
+
+}

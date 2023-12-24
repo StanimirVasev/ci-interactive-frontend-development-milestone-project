@@ -64,6 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
             duelArea.style.display = 'block';
             previousScreen = 'duel';
             currentScreen = 'duel';
+
+            // Hide footer for smaller screens in duel area and pokedex //
+            const footerContainer = document.querySelector('.footer-container');
+            if (footerContainer) {
+                footerContainer.style.display = 'none';
+            }
         }
     });
 
