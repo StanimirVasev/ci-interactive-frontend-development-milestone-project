@@ -173,7 +173,7 @@ The game consist of the following screens:
 
 ### Frameworks, Libraries & Tools
 
-- Font Awesome was used to access the hone, pokedex, volume up and volume mute icons.
+- Font Awesome was used to access the home, pokedex, volume up and volume mute icons.
 - Google Fonts was used to access Montserrat and sans-serif fonts.
 - GitHub was used to streamline version control.
 
