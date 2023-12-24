@@ -318,7 +318,7 @@ li {
 
 /* Adjustments for smaller screens */
 /* Galaxy Fold */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 280px) and (max-width: 320px) {
     .game-box {
         height: 90%;
         max-width: 100%;
@@ -436,9 +436,83 @@ li {
     }
 }
 
-/* iPhone 12 Pro */
-@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
-    
+/* Larger Phone Screens (e.g., iPhone 12 Pro) */
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+    .game-box {
+        height: 90%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 40px;
+    }
+
+    .home-screen-rule {
+        top: 410px;
+        right: 40px
+    }
+
+    .home-screen-rule p {
+        margin-left: -295px;
+        margin-top: 100px;
+    }
+
+    /* */
+
+
+    .type-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin-top: -120px;
+        margin-bottom: -90px;
+    }
+
+    .type-images img {
+        width: 55px;
+        height: 55px;
+        margin-left: 145px;
+        margin-top: 65px;
+        margin-bottom: 30px;
+    }
+
+    .pokemons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: -30px;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .pokemon {
+        width: 110px;
+        height: 110px;
+    }
+
+    .pokemon-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .turn-outcomes {
+        margin-top: -25px;
+    }
+
+    .score-container p {
+        margin-top: 25px;
+    }
+
+    #endGameImage {
+        height: 500px;
+        max-width: 100%;
+    }
 }
 
 /* Tablet */
