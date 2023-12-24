@@ -434,6 +434,10 @@ li {
         height: 300px;
         max-width: 100%;
     }
+
+    .pokemon-background {
+        background-size: auto;
+    }
 }
 
 /* Larger Phone Screens (e.g., iPhone 12 Pro) */
@@ -510,19 +514,23 @@ li {
         height: 500px;
         max-width: 100%;
     }
+
+    .pokemon-background {
+        background-size: auto;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .game-box {
         height: 88%;
-        max-width: 100%;
+        max-width: 660px;
         margin-top: 5px;
     }
 
     .home-screen-rule {
         top: 330px;
-        right: 100px;
+        right: 90px;
     }
 
     .home-screen-rule p {
@@ -534,5 +542,9 @@ li {
     #modal-content p,
     li {
         font-size: 15px;
+    }
+
+    .pokemon-background {
+        background-size: auto;
     }
 }
