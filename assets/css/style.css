@@ -255,7 +255,7 @@ li {
     align-items: center;
     overflow: hidden;
     border-radius: 50%;
-    border: 6px solid #E83030;
+    border: 6px solid #ee1515;
     box-sizing: border-box;
     transition: background-color 0.3s ease;
 }
