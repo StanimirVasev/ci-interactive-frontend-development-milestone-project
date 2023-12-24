@@ -1,4 +1,4 @@
-# PokéDuel
+# PokéDuel <img src="assets/images/pokeball-favicon.png>
 
 **Developer: Stanimir Vasev**
 
@@ -6,7 +6,7 @@
 
 ## Table of Content
 
-- [PokéDuel](#pokéduel)
+- [PokéDuel \<img src="assets/images/pokeball-favicon.png\>](#pokéduel-img-srcassetsimagespokeball-faviconpng)
   - [Table of Content](#table-of-content)
   - [Project Goals](#project-goals)
     - [User Goals](#user-goals)
