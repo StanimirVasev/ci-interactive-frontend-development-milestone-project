@@ -316,6 +316,7 @@ The game consist of the following screens:
 ### Code
 
 - Overall game design (including game box and menu design) was inspired by the Code Institute Student Project example from [Mike Ralph](https://www.miker94.github.io/CI-Project-Portfolio-2/).
+- Rock, paper, scissors game idea was inspired by [Dulce and Eduardo Hernand](https://github.com/iamdulce/rock-paper-scissors-)
 - Footer was inspired by the Code Institute Student Project example from [Aleksandra Haniok](https://www.aleksandracodes.github.io/CI_PP2_SunshineGuessing/).
 
 ## Acknowledgements
