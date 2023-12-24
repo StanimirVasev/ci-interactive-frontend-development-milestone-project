@@ -203,8 +203,8 @@ li {
 }
 
 #endGameImage {
-    width: 600px;
-    height: 303.75px;
+    width: 620px;
+    height: 330px;
 }
 
 .play-again-btn {
@@ -430,9 +430,9 @@ li {
         margin-top: -6px;
     }
 
-    .end-game-gif {
+    #endGameImage {
+        height: 300px;
         max-width: 100%;
-        height: auto;
     }
 }
 
@@ -460,9 +460,6 @@ li {
         margin-left: -295px;
         margin-top: 100px;
     }
-
-    /* */
-
 
     .type-images {
         display: flex;
@@ -516,4 +513,26 @@ li {
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .game-box {
+        height: 88%;
+        max-width: 100%;
+        margin-top: 5px;
+    }
+
+    .home-screen-rule {
+        top: 330px;
+        right: 100px;
+    }
+
+    .home-screen-rule p {
+        margin-left: -145px;
+        margin-top: 30px;
+        width: 200px;
+    }
+
+    #modal-content p,
+    li {
+        font-size: 15px;
+    }
+}
