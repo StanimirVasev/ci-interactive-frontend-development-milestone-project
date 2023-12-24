@@ -1,16 +1,16 @@
 /* Custom Fonts and Google Fonts Import */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
+
 @font-face {
     font-family: 'Pokemon Normal';
-    src: url('/assets/fonts/pokemon-normal.ttf') format('truetype');
+    src: url('https: //raw.githubusercontent.com/StanimirVasev/ci-interactive-frontend-development-milestone-project/main/assets/fonts/pokemon-normal.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Pokemon Solid';
-    src: url('/assets/fonts/pokemon-solid.ttf') format('truetype');
+    src: url('https: //raw.githubusercontent.com/StanimirVasev/ci-interactive-frontend-development-milestone-project/main/assets/fonts/pokemon-solid.ttf') format('truetype');
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
 
 /* Headings Styles */
 h1,
