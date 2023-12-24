@@ -1,5 +1,7 @@
 # PokéDuel <img src="assets/images/pokeball-favicon.png" style="width:30px; height:30px;">
 
+**PokéDuel is a captivating twist on the classic game of rock, paper, scissors.**
+
 **Developer: Stanimir Vasev**
 
 [Visit live website](https://stanimirvasev.github.io/ci-interactive-frontend-development-milestone-project/)
